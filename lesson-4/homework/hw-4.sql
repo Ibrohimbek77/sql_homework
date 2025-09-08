@@ -80,8 +80,8 @@ SELECT * FROM Employees
 WHERE Age BETWEEN 30 AND 40 OR DepartmentName = 'Marketing'
 
 --task15
-SELECT TOP 10 * FROM Employees
-ORDER BY Salary DESC OFFSET 10 ROWS 
+SELECT * FROM Employees
+ORDER BY Salary DESC OFFSET 10 ROWS FETCH NEXT 10 ROWS ONLY
 
 --task16
 SELECT * FROM Products
